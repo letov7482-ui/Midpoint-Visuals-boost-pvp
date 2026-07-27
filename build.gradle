@@ -10,18 +10,6 @@ base {
     archivesName = "midpoint_visuals"
 }
 
-repositories {
-    mavenCentral()
-    maven {
-        name = 'Fabric'
-        url = 'https://fabricmc.net'
-    }
-    maven {
-        name = 'Mojang'
-        url = 'https://minecraft.net'
-    }
-}
-
 dependencies {
     minecraft "com.mojang:minecraft:1.21.4"
     mappings loom.officialMojangMappings()
