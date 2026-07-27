@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "midpoint_visuals",
+  "version": "${version}",
+  "name": "Midpoint Visuals",
+  "description": "Premium Visual Client by Midpoint",
+  "authors": [
+    "Midpoint"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/midpoint_visuals/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.midpoint.visuals.MidpointVisuals"
+    ],
+    "client": [
+      "net.midpoint.visuals.MidpointVisualsClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.21.4",
+    "fabric-api": "*"
+  }
+}
