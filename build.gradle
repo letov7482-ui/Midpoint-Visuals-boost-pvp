@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.9-SNAPSHOT'
+    id 'fabric-loom' version '1.9.2'
     id 'maven-publish'
 }
 
@@ -12,11 +12,19 @@ base {
 
 repositories {
     mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://fabricmc.net'
+    }
+    maven {
+        name = 'Mojang'
+        url = 'https://minecraft.net'
+    }
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:1.21.4"
-    mappings lore: mojang_mappings("1.21.4")
+    mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:0.16.9"
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.114.0+1.21.4"
 }
