@@ -8,6 +8,9 @@ public class ModuleManager {
 
     public static void init() {
         register(new BlockOverlayModule());
+        register(new TargetESPModule());
+        register(new HitboxModule());
+        register(new ParticlesModule());
     }
 
     private static void register(Module module) {
