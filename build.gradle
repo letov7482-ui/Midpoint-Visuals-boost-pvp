@@ -1,13 +1,39 @@
+buildscript {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://fabricmc.net'
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.fabricmc:fabric-loom:1.9-SNAPSHOT'
+    }
+}
+
 plugins {
-    id 'fabric-loom' version '1.9.2'
     id 'maven-publish'
 }
+
+apply plugin: 'fabric-loom'
 
 version = '1.0.0'
 group = 'net.midpoint.visuals'
 
 base {
     archivesName = "midpoint_visuals"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://fabricmc.net'
+    }
+    maven {
+        name = 'Mojang'
+        url = 'https://minecraft.net'
+    }
 }
 
 dependencies {
