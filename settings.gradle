@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         maven {
-            name = 'Fabric'
+            name = 'FabricLibraries'
             url = 'https://fabricmc.net'
         }
         maven {
